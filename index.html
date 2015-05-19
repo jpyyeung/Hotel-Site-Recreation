@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hotel Booking</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Lora|Karla:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script>
+
+</head>
+<body>
+<!-- ********     HEADER-NAV    ************* -->
+	<nav class="header-nav ttup">
+		<div class="wrapper flex-container">
+			<div class="nav-top-left">
+				<div class="nav-top-left-logo">
+					<img src="assets/temp-icon.png" alt="cloudy"class="cloud">
+				</div>
+				<div class="nav-top-left-weather">
+					<p>London DC, GR 17&deg;C</p>
+				</div>
+			</div>
+			<div class="nav-top-right">
+				<div class="nav-top-right-login">
+					<a href="#">login</a>|<a href="#">register</a>
+				</div>
+				<div class="nav-top-right-icon">
+					<img src="assets/union-jack.png" alt="union jack">
+					<i class="fa fa-angle-down"></i>
+				</div>
+			</div>
+		</div>
+	</nav>
+<!-- ********     MAIN NAV    ********* -->
+	<nav class="main-nav">
+		<div class="wrapper flex-container">
+			<div class="main-nav-logo">
+				<img src="assets/logoDark.png" alt="hotel booking logo">
+			</div>
+			<div class="main-nav-menu ttup">
+				<span class="fa fa-bars fa-2x" title="menu"></span>
+				<ul class="dropdown">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Accomodation</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Pages</a><img src="assets/dropdown-arrow.png" alt=""></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Contacts</a></li>
+					<li class="redBar"><a href="#"><img src="assets/call-icon.png" alt="call icon">123 456 7890</a></li>
+				</ul>
+			</div>
+		</div>	
+	</nav>
+<!-- HEADER WITH FLICKITY -->
+	<header class="headflick">
+		<div class="wrapper">
+			<div class="main-header">
+				<h1>Book your summer <span class="notpf">2015</span></h1>
+				<h2>Holidays with <span class="red">hotel </span><strong>!</strong></h2>
+				<i class="fa fa-angle-double-down fa-2x"></i>
+			</div>
+			<div class="header-special-offer ttup">
+				<p>Special Offer</p><p>On Booking</p>
+					<h2>50<span class="percent">&#37;</span></h2>
+					<sup>OFF</sup>
+			</div>
+		</div>	
+		<div class="gallery js-flickity" data-flickity-options='{ "imagesLoaded": true }'>
+				<img src="http://placehold.it/1970x734">
+				<img src="http://placehold.it/1970x734">
+				<img src="http://placehold.it/1970x734">
+				<img src="http://placehold.it/1970x734">
+				<img src="http://placehold.it/1970x734">
+		</div>
+			
+	</header>
+<!-- BOOK YOUR ROOM -->
+	<section class="wrapper flex-container room-book">
+		<div class="book-title ttup">
+			<h5>book your</h5>
+			<h4>Rooms</h4>	
+		</div>
+		<div class="book">
+			<form action="demo_form.asp">
+					<input type="text" name="arrival" placeholder="arrival" class="ttup">
+					<input type="image" src="assets/cal.png" alt="Submit" width="15" height="16">
+			</form>
+		<div class="book">
+			<form action="demo_form.asp">
+					<input type="text" name="departure" placeholder="departure" class="ttup">
+					<input type="image" src="assets/cal.png" alt="Submit" width="15" height="16">
+			</form>
+		</div>
+		<div class="book">
+			<form action="demo_form.asp">
+					<input type="text" name="room" placeholder="1 room" class="ttup">
+					<input type="image" src="assets/drop.png" alt="Submit" width="7" height="7" class="drop">
+			</form>
+		</div>
+		<div class="book">
+			<form action="demo_form.asp">
+					<input type="text" name="adult" placeholder="1 adult" class="ttup">
+					<input type="image" src="assets/drop.png" alt="Submit" width="7" height="7" class="drop">
+			</form>
+		</div>
+		<div class="book">
+			<form action="demo_form.asp">
+					<input type="text" name="children" placeholder="0 child" class="ttup">
+					<input type="image" src="assets/drop.png" alt="Submit" width="7" height="7" class="drop">
+			</form>
+		</div>	
+		<div class="book">
+			<form action="demo_form.asp" class="noborder">
+  					<input type="submit" value="Book" class="bookroom ttup">
+			</form>
+		</div>
+	</section>
+<!-- SERVICES -->
+	<section class="room-services">
+		<div class="wrapper flex-container">
+			<div class="service">
+				<img src="assets/restaurant-icon.png" alt="restaurant-icon">
+				<h4>Restaurant</h4>
+				<p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. vitaw molestie interdum.</p>
+			</div>
+			<div class="service">
+				<img src="assets/golf-club.png" alt="golf-icon">
+				<h4>Sports Club</h4>
+				<p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. vitaw molestie interdum.</p>
+			</div>
+			<div class="service">
+				<img src="assets/pickup-icon.png" alt="pickup-icon">
+				<h4>Pick up</h4>
+				<p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. vitaw molestie interdum.</p>
+			</div>
+			<div class="service">
+				<img src="assets/bar-icon.png" alt="bar-icon">
+				<h4>Bar</h4>
+				<p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. vitaw molestie interdum.</p>
+			</div>
+		</div>
+	</section>
+<!-- SELECT A ROOM -->
+	<section class="room-select">
+			<h3>Select your room</h3>
+			<img src="assets/fleur.png" alt="fleur" class="fleur">
+		<div class="wrapper flex-container">
+			<div class="room-big">
+				<div class="room-big-pic">
+					<img src="http://placehold.it/749x456">
+				</div>
+				<div class="room-big-info">
+					<div class="room-select-book">
+						<h4>Deluxe Room</h4><p>$180<span class="price">/night</span></p>
+					</div>
+					<!-- BOOK BUTTON -->
+					<div class="room-select-book roombook-border">
+						<a href="#"><p>Book</p></a>
+					</div> 
+
+				</div>
+			</div>
+			<div class="room-small">
+				<div class="room-small-pic">
+					<img src="http://placehold.it/361x211">
+					<div class="room-small-info">
+						<div class="room-select-book">
+							<h5>Classic Room</h5><p>$150<span class="price">/night</span></p>
+						</div>	
+						<!-- BOOK BUTTON -->
+						<div class="room-select-book roombook-border">
+							<a href="#"><p>Book</p></a>
+						</div> 
+
+					</div>
+				</div>
+				<div class="room-small-pic">
+					<img src="http://placehold.it/361x211">
+					<div class="room-small-info">
+						<div class="room-select-book">
+							<h5>Executive Room</h5><p>$130<span class="price">/night</span></p>
+						</div>
+						<!-- BOOK BUTTON -->
+						<div class="room-select-book roombook-border">
+							<a href="#"><p>Book</p></a>
+						</div> 
+
+					</div>	
+				</div>				
+			</div>
+		</div>
+		<div class="view-room-button"><a href="#">View All Rooms</a></div>	
+	</section>
+<!-- SHOWCASE WITH FLICKTIY -->	
+	<section class="showcase">
+		<h3>Hotel Showcase</h3>
+		<img src="assets/fleur.png" alt="fleur" class="fleur">
+			<div class="gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "wrapAround": true}'>
+				<img src="http://placehold.it/263x185" alt="">
+				<img src="http://placehold.it/263x185" alt="">
+				<img src="http://placehold.it/263x185" alt="">
+				<img src="http://placehold.it/263x185" alt="">
+				<img src="http://placehold.it/263x185" alt="">
+				<img src="http://placehold.it/263x185" alt="">
+				<img src="http://placehold.it/263x185" alt="">
+				<img src="http://placehold.it/263x185" alt="">
+				<img src="http://placehold.it/263x185" alt="">
+				<img src="http://placehold.it/263x185" alt="">
+				<img src="http://placehold.it/263x185" alt="">
+			</div>
+	</section>
+<!-- HOTEL INFO -->
+	<section class="info">
+		<main class="wrapper flex-container">
+			<div class="info-type-box col1">
+			<h4>news</h4>
+				<div class="info-news pt0">
+					<div class="info-news-pic">
+						<img src="http://placehold.it/68x57" alt="">
+					</div>
+					<div class="info-news-text">
+						<p>Quisque at felis port</p>
+						<p>titordga</p>
+						<h6>14 May 2014</h6>
+					</div>
+				</div>
+				<div class="info-news">
+					<div class="info-news-pic">
+						<img src="http://placehold.it/68x57" alt="">
+					</div>
+					<div class="info-news-text">
+						<p>Donec scelerisque</p> 
+						<p>vulputate</p>
+						<h6>14 May 2014</h6>
+					</div>
+				</div>
+				<div class="info-news">
+					<div class="info-news-pic">
+						<img src="http://placehold.it/68x57" alt="">
+					</div>
+					<div class="info-news-text">
+						<p>Curabitur varius quam</p> 
+						<p>lorem</p>
+						<h6>14 May 2014</h6>
+					</div>
+				</div>
+			</div>
+			<div class="info-type-box col2">
+			<h4>About Hotels</h4>
+				<div class="info-about-pic">
+					<img src="http://placehold.it/524x185" alt="">
+				</div>
+				<p>Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.</p>
+			</div>
+			<div class="info-type-box col1">
+			<h4>customer says</h4>
+				<div class="info-customer-says">
+					<p>Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan urna vitae molestie interdum.</p>
+					<p>Nam sed placerat libero, non eleifend dolor.</p>
+					<div class="info-customer-arrow">
+						<i class="fa fa-angle-left fa-2x"></i>
+						<i class="fa fa-angle-right fa-2x"></i>
+					</div>
+				</div>
+				<div class="info-news">
+					<div class="info-news-pic">
+						<img src="http://placehold.it/68x57" alt="">
+					</div>
+					<div class="info-news-text ttup">
+						<p>John Doe</p>
+						<h6>www.john.com</h6>
+					</div>
+				</div>
+			</div>
+		</main>
+<!-- 	BLUE BAR CONTACT -->	
+		<footer class="contact">
+			<div class="wrapper flex-container">
+				<div class="contact-call">
+					<h5>call us</h5>
+					<p>123 456 7890</p>
+				</div>
+				<div class="contact-email">
+					<h5>email us</h5>
+					<p>info@hotelbooking.com</p>
+				</div>
+				<div class="contact-newsletter">
+					<form action="demo_form.asp">
+  						<input type="text" name="lname" placeholder="enter id for newsletter" class="letter ttup">
+  						<input type="submit" value="Go" class="gobutton ttup">
+					</form>
+				</div>
+				<div class="contact-social">
+					<ul class="social">
+						<li><i class="fa fa-facebook"></i></li>
+						<li><i class="fa fa-twitter"></i></li>
+						<li><i class="fa fa-google-plus"></i></li>
+						<li><i class="fa fa-linkedin"></i></li>
+					</ul>
+				</div>
+			</div>	
+		</footer>		
+	</section>
+<!-- FOOTER -->	
+	<footer class="links">
+		<div class="wrapper flex-container">
+
+			<div class="footer-loc fcol">
+				<div class="logo-column">
+					<img src="assets/logo.png" alt="logo">
+					<div class="logo-title ttup">
+						<h4>Hotel</h4>
+						<p>booking</p>
+					</div>
+				</div>
+				
+					<p class="floc-1st">Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.</p>
+				
+				<div class="logo-loc">
+					<div class="logo-column-place">
+						<i class="fa fa-map-marker fa-2x"></i>
+					</div>
+					<div class="logo-column-place">
+						<p>St Amsterdam finland,</p>
+						<p>United Stats of AKY16 8PN</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-links fcol">
+				<h4>Quick Links</h4>
+				<div class="footer-links-wrap">
+					<div class="link-column">
+						<p>Rooms</p>
+						<p>Food &amp; Drinks</p>
+						<p>Beach Values</p>
+						<p>Amenities</p>
+					</div>
+					<div class="link-column">
+						<p>Noordwijk</p>
+						<p>Wellness</p>
+						<p>Manifesto</p>
+						<p>Contact</p>
+					</div>
+				</div>	
+			</div>
+			<div class="footer-global fcol">
+				<h4>We are global</h4>
+				<img src="assets/map-dark.jpg" alt="">
+			</div>
+			<div class="rights">
+				<p>&copy; 2015 Hotelbooking. All rights reserved</p>
+			</div>
+		</div>	
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".fa-bars").on("click", function(){
+					$(".dropdown").toggleClass("open");
+				});
+			});
+		</script>
+</body>
+</html>
